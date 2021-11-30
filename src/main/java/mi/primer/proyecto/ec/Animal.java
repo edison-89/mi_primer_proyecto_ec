@@ -6,6 +6,7 @@ public class Animal {
 		// TODO Auto-generated method stub
 		System.out.println("Mi primer proyecto con GitHub");
 		System.out.println("Mi segundo proyecto con GitHub");
+		System.out.println("Mi tercer proyecto con GitHub");
 	}
 
 }
