@@ -3,6 +3,7 @@ package mi.primer.proyecto.ec;
 public class Animal {
 
 	public static void main(String[] args) {
+		
 		// TODO Auto-generated method stub
 		int edad = 25;
 		int edadMadre = 30;

@@ -1,39 +1,33 @@
-package com.ec.edu.dependencias;
+package com.ec.edu.inyeccion.dependecias.extendida;
 
 public class Matricula {
 
 	private String semestre;
 	private int anio;
 	private Estudiante estudiante;
+	private Direccion direccion;
 
-	public String matricular(String nombre, String apellido, String calle, String numero,int tipo) {
-		if(tipo==1) {
-			this.estudiante = new Estudiante();//JVM: heap //ID
-			
-		}else if(tipo==2) {
-			this.estudiante = new EstudianteOdontologia();//JVM: heap //ID
-		} else if(tipo==3) {
-			this.estudiante = new EstudianteArquitecura();//JVM: heap //ID
-		}else {
-			this.estudiante = new EstudiantesAdministracion();//JVM: heap //ID
-		}
+	public Matricula(Estudiante estudiante, Direccion direccion) {
+		this.estudiante = estudiante;
+		this.direccion = direccion;
+	}
+
+	public String matricular(String nombre, String apellido, String calle, String numero) {
+		
 		this.estudiante.setNombre(nombre);
 		this.estudiante.setApellido(apellido);
-
-		Direccion direccion = new Direccion();
-		direccion.setCallePrincipal(calle);
-		direccion.setNumeracion(numero);
+		
+		this.direccion.setCallePrincipal(calle);
+		this.direccion.setNumeracion(numero);
 
 		this.estudiante.setDireccion(direccion);
 
 		// logica para guadar en la base de datos los datos de la matricula
 		// y el estudiante
 		System.out.println(this.estudiante);
-
+		
 		this.estudiante.pagarServiPagos(nombre);
-		
 
-		
 		return "Estudiante Guardado con Exito";
 	}
 
@@ -60,6 +54,14 @@ public class Matricula {
 
 	public void setAnio(int anio) {
 		this.anio = anio;
+	}
+
+	public Direccion getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(Direccion direccion) {
+		this.direccion = direccion;
 	}
 
 }
