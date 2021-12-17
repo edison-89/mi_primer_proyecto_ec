@@ -15,6 +15,6 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 	<constructor-arg value="Pedro"></constructor-arg>
 	<constructor-arg value="Vivanco"></constructor-arg>
 	<constructor-arg value="Fisica"></constructor-arg>
-	<constructor-arg value="Poli"></constructor-arg>
+	<constructor-arg value="Poli"></constructor-arg> 
 	</bean>
 </beans>

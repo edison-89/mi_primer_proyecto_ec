@@ -1,4 +1,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<<<<<<< HEAD
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>programacion.avanzada.uce</groupId>
+	<artifactId>mi_primer_proyecto_ec</artifactId>
+	<version>1.0.0</version>
+
+	<dependencies>
+		<!--Todo esto es un comentario-->
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.2.0.RELEASE</version>
+		</dependency>
+		
+	</dependencies>
+
+=======
   <modelVersion>4.0.0</modelVersion>
   <groupId>programacion.avanzada.uce</groupId>
   <artifactId>mi_primer_proyecto_ec</artifactId>
@@ -20,4 +38,5 @@
 
 	</dependencies>
   
+>>>>>>> branch 'main' of https://github.com/edison-89/mi_primer_proyecto_ec.git
 </project>
