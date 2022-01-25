@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<bean id="alumno"
+		class="com.ec.edu.dependencias.Jessica.Yanez.tarea.Alumno">
+		<property name="nombre" value="jessi"></property>
+		<property name="apellido" value="yan"></property>
+		<property name="semestre" value="sexto"></property>
+	</bean>
+
+	<bean id="profesor" class="com.ec.edu.dependencias.Jessica.Yanez.tarea.Profesor">
+	<constructor-arg value="Pedro"></constructor-arg>
+	<constructor-arg value="Vivanco"></constructor-arg>
+	<constructor-arg value="Fisica"></constructor-arg>
+	<constructor-arg value="Poli"></constructor-arg> 
+	</bean>
+</beans>
