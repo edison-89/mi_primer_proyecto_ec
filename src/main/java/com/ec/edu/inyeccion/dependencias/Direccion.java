@@ -3,7 +3,7 @@ package com.ec.edu.inyeccion.dependencias;
 public class Direccion {
 	
 	private String callePrincipal;
-	private String numeracion;
+	private String numeracion;//Taller 21
 	
 	public void borrarDireccion() {
 		
